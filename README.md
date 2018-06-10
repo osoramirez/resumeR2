@@ -11,3 +11,4 @@ This is a basic example which shows you how to solve a common problem:
  resume(rnorm(100)
  resume2data(rnorm(100))
 ```
+# resumeR
