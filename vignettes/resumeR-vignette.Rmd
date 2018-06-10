@@ -71,7 +71,17 @@ plotx(data)
 
 
 
-Also a quote using `>`:
+Installing package :
 
-> "He who gives up [code] safety for [code] speed deserves neither."
-([via](https://twitter.com/hadleywickham/status/504368538874703872))
+
+
+
+
+##Installing the package
+
+
+> 
+library(devtools)
+> 
+devtools::install_github("osoramirez/Sinax4")
+
