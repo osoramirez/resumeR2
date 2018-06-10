@@ -11,7 +11,9 @@ Encoding: UTF-8
 LazyData: true
 RoxygenNote: 6.0.1
 Depends: R (>= 3.4.4), e1071, car
-Suggests: MASS,
+Suggests: 
+    MASS,
     knitr,
-    rmarkdown
+    rmarkdown,
+    covr
 VignetteBuilder: knitr
