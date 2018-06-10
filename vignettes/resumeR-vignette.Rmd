@@ -1,6 +1,6 @@
 ---
 title: "Vignette Title"
-author: "Vignette Author"
+author: "Oscar Ramírez-Alán"
 date: "`r Sys.Date()`"
 output: rmarkdown::html_vignette
 vignette: >
@@ -35,53 +35,41 @@ You could requiere "e1071";  "car" and "carData" package
 2. load you data
 
 ```{r}
-set.seed(123)
+set.seed(12345)
 data<-rnorm(100)
 ```
 
-3. get a descriptive summary table
+3. get a descriptive summary plot and table
 
 ```{r, fig.width=7, fig.height=6}
 resume(rnorm(100))
 ```
 
+4. get a complete summary table, histogram and boxplot of your distribution data.
 
-## Vignette Info
+```{r, fig.width=7, fig.height=5}
+resume2data(data)
+```
 
-Note the various macros within the `vignette` section of the metadata block above. These are required in order to instruct R how to build the vignette. Note that you should change the `title` field and the `\VignetteIndexEntry` to match the title of your vignette.
+5. For you data.frame get a summarie table
 
-## Styles
+```{r}
+data(CO2)
+resumendf(conc ~Type, data=CO2)
+```
 
-The `html_vignette` template includes a basic CSS theme. To override this theme you can specify your own CSS in the document metadata as follows:
-
-    output: 
-      rmarkdown::html_vignette:
-        css: mystyles.css
 
 ## Figures
 
-The figure sizes have been customised so that you can easily put two images side-by-side. 
+If you are interested in exploring the distribution of your data using a histogram, use "plotx"
 
-```{r, fig.show='hold'}
-plot(1:10)
-plot(10:1)
+```{r, fig.width=7, fig.height=5, fig.cap = "Histogram"}
+set.seed(12345)
+data<-rnorm(100)
+plotx(data)
 ```
 
-You can enable figure captions by `fig_caption: yes` in YAML:
 
-    output:
-      rmarkdown::html_vignette:
-        fig_caption: yes
-
-Then you can use the chunk option `fig.cap = "Your figure caption."` in **knitr**.
-
-## More Examples
-
-You can write math expressions, e.g. $Y = X\beta + \epsilon$, footnotes^[A footnote here.], and tables, e.g. using `knitr::kable()`.
-
-```{r, echo=FALSE, results='asis'}
-knitr::kable(head(mtcars, 10))
-```
 
 Also a quote using `>`:
 

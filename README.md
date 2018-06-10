@@ -12,3 +12,6 @@ This is a basic example which shows you how to solve a common problem:
  resume2data(rnorm(100))
 ```
 # resumeR
+
+
+[![Travis build status](https://travis-ci.org/osoramirez/resumeR.svg?branch=master)](https://travis-ci.org/osoramirez/resumeR)
