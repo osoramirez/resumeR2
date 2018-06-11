@@ -1,15 +1,14 @@
 \name{scores}
 \alias{scores}
-\title{Biostatistics students' scores}
+\title{scores data}
 \usage{
-  scores
+  data(scores)
 }
 \description{
-scores data from student (represent a simulated data).
+  Prints 'scores data'. The scores are the all student of the Biology from Biostatistical courses, from Universidad Nacional, Costa Rica.
+  -scores: is numeric (scores)
+  -year: is factor (year of the courses)
+  }
+\examples{
+  data(scores)
 }
-\format{
-  A data frame with 25 observations on 3 variables (groups)
-}
-
-
-
