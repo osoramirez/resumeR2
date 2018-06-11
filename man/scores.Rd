@@ -6,9 +6,16 @@
 }
 \description{
   Prints 'scores data'. The scores are the all student of the Biology from Biostatistical courses, from Universidad Nacional, Costa Rica.
-  -scores: is numeric (scores)
-  -year: is factor (year of the courses)
   }
+
+
+\arguments{
+  \item{scores}{is numeric (scores)}
+
+  \item{year}{is factor (year of the courses)}
+}
+
+
 \examples{
   data(scores)
 }
