@@ -2,7 +2,7 @@
 \alias{Mode}
 \title{Get a mode statistic}
 \usage{
-  h_mean()
+  Mode()
 }
 \description{
   Prints a 'Mode of your vector data'.
