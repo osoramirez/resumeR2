@@ -62,7 +62,7 @@ resumendf(conc ~Type, data=CO2)
 
 ## Figures
 
-If you are interested in exploring the distribution of your data using a histogram, use "plothist"
+If you are interested in exploring the distribution of your data using a histogram, use "plothist". 
 
 ```{r, fig.width=7, fig.height=5, fig.cap = "Histogram"}
 set.seed(12345)
