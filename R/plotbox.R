@@ -7,5 +7,6 @@ plotbox <- function(x) {
   boxplot(x,main=paste("Boxplot of", ylab, NULL), xlab=NULL,
           ylab=ylab, cex=.9, boxwex = .65,col = "#EBEBEB")
   points(mean(x), pch=16, cex = 1.8, col="black")
+  summary(x)
 }
 
