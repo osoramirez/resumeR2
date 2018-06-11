@@ -1,5 +1,5 @@
 ---
-title: "Vignette Title"
+title: "resumeR for a entire statistic summary"
 author: "Oscar Ramírez-Alán"
 date: "`r Sys.Date()`"
 output: rmarkdown::html_vignette
@@ -71,13 +71,20 @@ plothist(data)
 ```
 
 
+if you wnat to see a boxplot of your data
 
+```{r, fig.width=7, fig.height=5, fig.cap = "Histogram"}
+set.seed(12345)
+data<-rnorm(100)
+plotbox(data)
+```
 
 
 ##Installing the package
 
+
 > 
 library(devtools)
 > 
-devtools::install_github("osoramirez/Sinax4")
+devtools::install_github("osoramirez/resumeR")
 
