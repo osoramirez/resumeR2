@@ -51,6 +51,7 @@ resume(rnorm(100))
 resume2data(data)
 ```
 
+
 5. For you data.frame get a summarie table
 
 ```{r}
@@ -71,14 +72,9 @@ plotx(data)
 
 
 
-Installing package :
-
-
-
 
 
 ##Installing the package
-
 
 > 
 library(devtools)
