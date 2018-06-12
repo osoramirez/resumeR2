@@ -8,6 +8,7 @@
   Prints a 'plot of Frequency histogram'.
 }
 \examples{
-  data<-c(1,1,2,2,3,4,5,6,8,8,8,8,9,10,10)
+  set.seed(12345)
+  data<-rnorm(100,25,3)
   plothist(data)
 }
