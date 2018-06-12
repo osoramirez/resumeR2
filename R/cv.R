@@ -12,6 +12,11 @@
 #'x<-rnorm(25,2,3)
 #'cv(x)
 #
-cv <- function(x) sqrt(var(x,na.rm=TRUE))/mean(x,na.rm=TRUE)
+cv <- function(x, na.rm = TRUE)
+{
+  options(digits=3)
+  data <- na.omit(x)
+  sqrt(var(data,na.rm=TRUE))/mean(data,na.rm=TRUE)
+  }
 
 

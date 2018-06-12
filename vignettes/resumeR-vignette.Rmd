@@ -88,3 +88,6 @@ library(devtools)
 > 
 devtools::install_github("osoramirez/resumeR")
 
+
+
+%\VignetteEngine{asas} 

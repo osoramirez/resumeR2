@@ -1,8 +1,12 @@
 Package: resumeR
 Type: Package
+Date: Sys.Date()
 Title: The most complete summary statistic ever!
 Version: 1.0
-Author: Oscar Ramirez Alan, Universidad Nacional
+Authors@R: person("Oscar Ramírez Alán", email = "osoramirez@gmail.com",
+  role = c("aut", "cre"))
+Author: Oscar Ramírez Alán [aut, cre],
+Affiliation: Universidad Nacional, Costa Rica.
 Maintainer: The package maintainer <osoramirez@gmail.com>
 Description: This package is very useful, to get a complety summary statistic
     We can get a plots, and see what it happen with your data. Only work for a vector data

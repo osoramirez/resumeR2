@@ -13,21 +13,16 @@
 #'Mode(x)
 
 
-
-Mode <- function(x){
-  x1 <- na.omit(x)
-  ta <-table(x1)
-  tam <- max(ta)
-  if (all(ta == tam))
-    mod = NA
-  else
-    if(is.numeric(x1))
-      mod = as.numeric(names(ta)[ta == tam])
-  else
-    mod = names(ta)[ta == tam]
-  return(mod)
+Mode<-function (x)
+{
+  if (!is.atomic(x) | is.matrix(x))
+    stop("Supports only vectors.")
+  if (na.rm)
+    x <- na.omit(x)
+  tab <- table(x)
+  res <- names(which(tab == max(tab)))
+  if (!inherits(x, "factor"))
+    class(res) <- class(x)
+  return(as.vector(res))
 }
-
-
-#This function was performing by: https://www.r-bloggers.com/computing-the-mode-in-r/
 
