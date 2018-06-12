@@ -9,7 +9,7 @@
 }
 
 
-\arguments{
+\value{
   \item{scores}{is numeric (scores)}
 
   \item{year}{is factor (year of the courses)}

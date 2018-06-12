@@ -28,3 +28,6 @@ Mode <- function(x){
   return(mod)
 }
 
+
+#This function was performing by: https://www.r-bloggers.com/computing-the-mode-in-r/
+

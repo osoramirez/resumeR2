@@ -12,11 +12,15 @@
 #'x<-rnorm(25,2,3)
 #'se(x)
 #
+
+
 se<-function (x,na.rm = TRUE)
 {
   options(digits=3)
   n <- length(x)
   Stdev <- round(sd(x, na.rm = TRUE), 3)
   SE <- round(Stdev/sqrt(n), 3)
-  return(SE)
+  Ma<-round(mean(x, na.rm = TRUE), 3)
+  print(SE)
+  SE3 <-message(paste0("mean= ", Ma, "\u00b1", SE, " =standard error"))
 }
