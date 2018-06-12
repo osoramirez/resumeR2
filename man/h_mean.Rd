@@ -8,5 +8,6 @@
   Prints a 'Harmonic mean of your vector'.
 }
 \examples{
-  h_mean(rnorm(100))
+  x<-rnorm(25,2,3)
+  h_mean(x)
 }

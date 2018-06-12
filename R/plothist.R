@@ -1,3 +1,18 @@
+#'@title histogram of data
+#'
+#'@description Get a histogram, showing the mean and median of your data
+#'@param x is a numeric value, could be a  a vector or data.frame
+#'@export
+#'@keywords
+#'@seealso \code{\link[utils]resume2data}
+#'@return a summary
+#'@export
+#'
+#'@examples
+#'x<-rnorm(25,2,3)
+#'plothist(x)
+#
+
 plothist <- function(x) {
   require(graphics)
   opar <- par(no.readonly = TRUE)

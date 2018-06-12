@@ -1,3 +1,17 @@
+#'@title plotbox
+#'
+#'@description get a boxplot, showing the mean in plot
+#'@param x is a numeric value, could be a  a vector or data.frame
+#'@export
+#'@keywords
+#'@seealso \code{\link[utils]resume}
+#'@return a plotbox (a elegant boxplot)
+#'@export
+#'
+#'@examples
+#'x<-rnorm(25,2,3)
+#'plotbox(x)
+
 plotbox <- function(x) {
   require(graphics)
   opar <- par(no.readonly = TRUE)

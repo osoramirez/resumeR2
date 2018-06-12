@@ -8,6 +8,6 @@
   Prints 'Geometric mean'.
 }
 \examples{
-  x<-rnorm(100)
+  x<-rnorm(25,2,3)
   g_mean(x)
 }

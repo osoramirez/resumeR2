@@ -10,6 +10,7 @@ This is a basic example which shows you how to solve a common problem:
 ## basic example code
  resume(rnorm(100)
  resume2data(rnorm(100))
+ resumendf(scores~year, data=scores)
 ```
 # resumeR
 

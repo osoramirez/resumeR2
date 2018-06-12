@@ -8,5 +8,6 @@
   Prints 'Get a complete summary statistic and makes plots (histogram and boxplot)'.
 }
 \examples{
-  resume2data(rnorm(100))
+  x<-rnorm(25,2,3)
+  resume2data(x)
 }

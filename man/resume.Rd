@@ -8,5 +8,6 @@
   Prints 'Basic and descriptive statistic'.
 }
 \examples{
-  resume(rnorm(100))
+  x<-rnorm(25,2,3)
+  resume(x)
 }
