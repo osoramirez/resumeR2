@@ -3,9 +3,9 @@ Type: Package
 Date: Sys.Date()
 Title: The most complete summary statistic ever!
 Version: 1.0
-Authors@R: person("Oscar Ramírez Alán", email = "osoramirez@gmail.com",
+Authors@R: person("Oscar Ram?rez Al?n", email = "osoramirez@gmail.com",
   role = c("aut", "cre"))
-Author: Oscar Ramírez Alán [aut, cre],
+Author: Oscar Ramirez Alan [aut, cre],
 Affiliation: Universidad Nacional, Costa Rica.
 Maintainer: The package maintainer <osoramirez@gmail.com>
 Description: This package is very useful, to get a complety summary statistic
@@ -13,11 +13,14 @@ Description: This package is very useful, to get a complety summary statistic
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
+URL: https://github.com/osoramirez/resumeR 
+BugReports: https://github.com/osoramirez/resumeR/issues
 RoxygenNote: 6.0.1
 Depends: R (>= 3.4.4), e1071, car
-Suggests: 
+Suggests:
     MASS,
     knitr,
     rmarkdown,
-    covr
+    covr,
+    testthat
 VignetteBuilder: knitr

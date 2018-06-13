@@ -8,6 +8,7 @@
   Prints 'grades data'. The scores are the all student of the Biology from Biostatistical courses, from Universidad Nacional, Costa Rica.
 }
 
+\format{An object call \code{grades} with 47 rows and 2 columns.}
 
 \value{
   \item{scores}{is numeric (scores)}
@@ -19,3 +20,6 @@
 \examples{
   data(grades)
 }
+
+
+\keyword{datasets}
