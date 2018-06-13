@@ -26,4 +26,18 @@ plothist <- function(x) {
          c("Mean", "Median"),
          col = c( "red", "#3F689E"),
          lwd = c(2, 2), lty=c(1,2))
+  Max <- round(max(x), 3)
+  Stdev <- round(sd(x, na.rm = TRUE), 3)
+  Mean <- round(mean(x, na.rm = TRUE), 3)
+  Median <- round(median(x, na.rm = TRUE), 3)
+  n <- length(x)
+cat(paste("This option performs a histogram that show "))
+   {
+     cat(paste("your data has mean of ", Mean,  " and ", Stdev, " of standar desviation. "))
+  }
+{
+  cat(paste("Your median is ", Median, " in ", n, " samples data. "))
 }
+cat(paste("Check all your statistical data, using function: resume2data."))
+}
+
